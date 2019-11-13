@@ -160,4 +160,23 @@ return [
 
         Watchers\ViewWatcher::class => env('TELESCOPE_VIEW_WATCHER', true),
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Telescope Frontend Layout
+    |--------------------------------------------------------------------------
+    |
+    | The following will allow configuring the container class used by the
+    | Blade layout in telescope. Some list items may cause the content
+    | To overflow outside the table. A sensible default has been set.
+    |
+    */
+
+    'resources' => [
+        'views' => [
+            'container' => [
+                'class' => 'container'
+            ],
+        ],
+    ],
 ];
